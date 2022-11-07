@@ -1,32 +1,20 @@
 const articulos = [
     {
         id: 1,
-        nombre: `stanley\nblack`,
+        nombre: `botella\npink`,
         precio: 40000,
         imagen: `botellapink`,
     },
     {
         id: 2,
-        nombre: `stanley\nred`,
+        nombre: `botella\nwhite`,
         precio: 35000,
-        imagen: ``,
+        imagen: `botellawhite`,
     },
     {
         id: 3,
-        nombre: `stanley\nwhite`,
+        nombre: `botella\nblack`,
         precio: 30000,
-        imagen: ``,
+        imagen: `botellablack`,
     },
-    {
-        id: 4,
-        nombre: `stanley\npink`,
-        precio: 43000,
-        imagen: ``,
-    },
-    {
-        id: 5,
-        nombre: `combo\nstanley`,
-        precio: 90000,
-        imagen: ``,
-    }
 ];
