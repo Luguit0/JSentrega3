@@ -22,10 +22,9 @@ body {
     padding-top: 5vh;
     padding-bottom: 5vh;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), #f0e8e8);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0,0,0,0.3)), url(../images/camping2.jpg);
     text-align: center;
     align-items: center;
-    background-image: url(../images/camping.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
