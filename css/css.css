@@ -5,10 +5,35 @@
 }
 
 body {
-    background-color:#f0e8e8 ;
+    background-color: #f0e8e8;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
+}
+
+.titulo {
+    text-decoration: underline;
+    font-size: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.fondo-gradient {
+    height: calc(100vh - 70px);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), #f0e8e8);
+    text-align: center;
+    align-items: center;
+    background-image: url(../images/camping.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+
 }
 
 .card {
