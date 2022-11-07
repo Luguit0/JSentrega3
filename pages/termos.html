@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="../css/css.css">
     <title>Termos Stanley</title>
 </head>
 
@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/termos.html">Termos</a>
+                        <a class="nav-link" href="#">Termos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/botellas.html">Botellas</a>
+                        <a class="nav-link" href="#">Botellas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -56,8 +56,26 @@
     </nav>
         <main class="container-fluid items-center">
             <div>
-                <h2 class="text-center">BlackStanley</h2>
+                <h2 class="text-center">Termos Stanley</h2>
             </div>
+            <section class="row justify-content-around" id="cards">
+            </section>
+            <section class="carrito">
+                <h2 class= "mb-4 text-center">Tu Compra</h2>
+                <table id="table" class="table table-striped mb-4">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody">
+                    </tbody>
+                </table>
+                <h4 id="totalPagar"></h4>
+                <button id="btnComprar" class="btn btn-ligth">Finalizar compra</button>
+            </section>
         </main>
         <footer class="footer-main footer-color fixed-buttom mt-5 ">
             <div class="container">
@@ -99,8 +117,8 @@
             crossorigin="anonymous"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="./js/jsarticulos.js"></script>
-        <script src="./js/jsprueba.js"></script>
+        <script src="../js/jsarticulos.js"></script>
+        <script src="../js/jsprueba.js"></script>
 </body>
 
 </html>

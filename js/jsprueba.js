@@ -1,12 +1,12 @@
 let carrito = [];
 let cards = document.getElementById("cards");
-let btnFC = document.getElementById("btnFC");
+let btnComprar = document.getElementById("btnComprar");
 
 function ajustararticulos() {
     for (const producto of articulos) {
         cards.innerHTML += `
         <div class="card container-fluid col-sd-3">
-        <img src=./images/${producto.imagen}.jpg class="card-img-top" alt=${producto.imagen}>
+        <img src=../images/${producto.imagen}.jpg class="card-img-top" alt=${producto.imagen}>
         <div class="card-body">
             <h3 class="card-text">${producto.nombre.toUpperCase()}</h3>
             <p class="card-text">$ ${producto.precio}</p>
@@ -33,7 +33,7 @@ function agregarCarrito(productoComprar) {
     const storageJson = JSON.parse(localStorage.getItem(`listaArticulos`));
     console.log(storageJson);
     Swal.fire({
-        imageUrl: `./images/${productoComprar.imagen}.jpg`,
+        imageUrl: `../images/${productoComprar.imagen}.jpg`,
         imageWidth: 250,
         imageHeight: 250,
         imageAlt: productoComprar.nombre,
@@ -63,7 +63,7 @@ function agregarCarrito(productoComprar) {
     document.getElementById("totalPagar").innerText = `El total de tu compra es: $ ${totalCarrito * 1.21} con iva incluido`;
 }
 
-btnFC.onclick = () => {
+btnComprar.onclick = () => {
     carrito = [];
     document.getElementById("tBody").innerHTML = "";
     document.getElementById("totalPagar").innerText = "";
@@ -71,7 +71,7 @@ btnFC.onclick = () => {
     sessionStorage.clear();
     console.clear();
     Swal.fire({
-        imageAlt: btnFC.nombre,
+        imageAlt: btnComprar.nombre,
         title: `Gracias por tu compra!`,
         text: `En breve nos comunicaremos contigo`,
         width: 400,
