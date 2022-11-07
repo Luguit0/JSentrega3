@@ -2,19 +2,19 @@ const articulos = [
     {
         id: 1,
         nombre: `botella\npink`,
-        precio: 40000,
+        precio: 6500,
         imagen: `botellapink`,
     },
     {
         id: 2,
         nombre: `botella\nwhite`,
-        precio: 35000,
+        precio: 6000,
         imagen: `botellawhite`,
     },
     {
         id: 3,
         nombre: `botella\nblack`,
-        precio: 30000,
+        precio: 3000,
         imagen: `botellablack`,
     },
 ];
